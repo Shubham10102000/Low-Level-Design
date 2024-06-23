@@ -15,7 +15,7 @@ public class Client {
         Iterator itr = lib.createIterator();
         while (itr.hasNext()) {
             Book book = (Book) itr.next();
-            System.out.println(String.format("Price of %s book is Rs. %d",book.getName(),book.getPrice()));
+            System.out.printf("Price of %s book is Rs. %d%n",book.getName(),book.getPrice());
         }
     }
 }
